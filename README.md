@@ -17,3 +17,20 @@ Cześć. Publikuję pakiet skryptów na serwer FiveM RolePlay. Jest przerobiony 
 - Pamiętaj aby dobrze wpisać wszystkie znaki
 - Osobiście polecam zachować porządek w plikach. Zawsze dopisuj startowanie zasobu w odpowiedniej kategorii np. #prace#
 
+# Status na discordzie
+Aby zmienić status na discordzie podczas grania na twoim serwerze, Musisz wejść do /[detale]/discord/client.lua
+1. Zmieniamy tam client ID naszego discord APP (linijka SetDiscordAppId)
+2. Zmieniamy nazwe tekstu który będzie się wyświetlał po najechaniu na duże logo (np. nazwa serwera) SetDiscordRichPresenceAssetText
+3. Zmieniamy nazwe tekstu który będzie się wyświetlał po najechaniu na małe logo (np. discord serwera) SetDiscordRichPresenceAssetSmallText
+4. Zmieniamy nazwę zdjęcia który będzie dużym logiem SetDiscordRichPresenceAssetText
+5. Zmieniamy nazwę zdjęcia który będzie małym logiem SetDiscordRichPresenceAssetSmall
+
+# Jak stworzyć discord APP do statusu?
+- Wchodzimy na https://discord.com/developers/applications
+- Logujemy się
+- Tworzymy aplikację o nazwie np. Nazwa serwera
+- Klikamy na utworzoną aplikację
+- Kopiujemy Client ID i dajemy w linijke która jest opisane w #status na discordzie 1.
+- Klikamy po lewej w Rich Presence
+- Pod Rich Presence Assets dodajemy dwa zdjęcia w odpowiednich rozmiarach. Nazywamy je tak jak w #status na discordzie 2. oraz 3.
+- Gotowe
